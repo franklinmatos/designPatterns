@@ -2,11 +2,11 @@ package org.example.strategy;
 
 import java.math.BigDecimal;
 
-public class ISS implements Tax{
+public class IcmsTax implements Tax{
     @Override
     public BigDecimal calculate(BigDecimal amount) {
-        // Define a taxa de 3% como um BigDecimal
-        BigDecimal taxRate = new BigDecimal("0.03");
+        // Define a taxa de 13% como um BigDecimal
+        BigDecimal taxRate = new BigDecimal("0.13");
         return amount.multiply(taxRate);
     }
 }

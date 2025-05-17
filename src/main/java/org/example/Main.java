@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.strategy.ICMS;
-import org.example.strategy.IPVA;
-import org.example.strategy.ISS;
+import org.example.strategy.IcmsTax;
+import org.example.strategy.IpvaTax;
+import org.example.strategy.IssTax;
 import org.example.strategy.Tax;
 import org.example.strategy.enums.TaxType;
 
@@ -15,10 +15,10 @@ public class Main {
 
         // adiciona todos os impostos e suas respectivas classes para serem instanciadas
         final Map<String, Tax> mapsTax = Map.of(
-                TaxType.ISS.getDisplayName(), new ISS(),
-                TaxType.IPVA.getDisplayName(), new IPVA(),
-                TaxType.IPTU.getDisplayName(), new IPVA(),
-                TaxType.ICMS.getDisplayName(), new ICMS()
+                TaxType.ISS.getDisplayName(), new IssTax(),
+                TaxType.IPVA.getDisplayName(), new IpvaTax(),
+                TaxType.IPTU.getDisplayName(), new IpvaTax(),
+                TaxType.ICMS.getDisplayName(), new IcmsTax()
         );
 
         // ao selecioanr a classe ICMS, nos chamaremos automaticamente o médoto calculate dentro desta classe.
