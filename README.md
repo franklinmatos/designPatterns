@@ -15,9 +15,15 @@ Para facilitar nosso exemplo criamos um enum para listar todas as tavas que irem
 
 
 public enum TaxType {
-
-    ICMS,
-    IPVA,
-    IPTU,
-    ISS
+    ICMS("ICMS"),
+    IPVA("IPVA"),
+    IPTU("IPTU"),
+    ISS("ISS");
 }
+
+
+Para acompanhar a execução deste padrão, na classe Main.java tem o exemplo de seleção
+do ICMS, retornando a classe instanciada referente a essa imposto e o resultado do valor
+aplicado a taxa que foi definida na classe e na implementação do método.
+
+
