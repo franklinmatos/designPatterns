@@ -27,3 +27,11 @@ do ICMS, retornando a classe instanciada referente a essa imposto e o resultado 
 aplicado a taxa que foi definida na classe e na implementação do método.
 
 
+1 - Observer
+Criamos o exemplo de uma corretora de bitcoin onde ela observa a troca de valores. Ao mudar o valor do Bitcoin os investidores e as platadormas
+parceiras são notificadas da mudança de preços.
+
+O padrão oberver implementado aqui tem sua classe Bitcoin como sendo a classe que armazena a lista de observadores e tem a responsabilidade de fazer as notificações.
+BitcoinPriceObserver  é a interface observada. E por fim as classes InvestorNotifier, NewsPlatform e BinancePriceLogger são as classes que serão notificadas a cada troca de preços
+
+obs: Para ver o padrão funcionando basta executar a classe Main.java que está dentro o package observer
